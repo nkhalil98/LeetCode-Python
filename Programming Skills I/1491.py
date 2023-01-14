@@ -18,5 +18,5 @@ def average(salary: list[int]) -> float:
     return sum(salary) / len(salary)
 
 if __name__ == "__main__":
-    print(average(salary = [4000,3000,1000,2000])) # 2500
-    print(average(salary = [1000,2000,3000])) # 2000
+    assert average(salary = [4000,3000,1000,2000]) == 2500
+    assert average(salary = [1000,2000,3000]) == 2000
