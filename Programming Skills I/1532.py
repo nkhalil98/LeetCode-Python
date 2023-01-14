@@ -11,6 +11,7 @@ def countOdds(low: int, high: int) -> int:
     return r + 1
 
 if __name__ == "__main__":
-    print(countOdds(3,7))  # 3
-    print(countOdds(8, 10)) # 1
-    print(countOdds(1,10)) # 5
+    # test cases
+    assert countOdds(3,7) == 3
+    assert countOdds(8, 10) == 1
+    assert countOdds(1,10) == 5
