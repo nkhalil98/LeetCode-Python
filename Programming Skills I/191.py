@@ -14,6 +14,12 @@ The input must be a binary string of length 32.
 Follow up: If this function is called many times, how would you optimize it?
 """
 
-def hammingWeight(self, n: int) -> int:
+def hammingWeight(n: int) -> int:
     binary = bin(n)
     return binary.count('1')
+  
+if __name__ == "__main__":
+    # test cases
+    assert hammingWeight(11) == 3
+    assert hammingWeight(128) == 1
+    assert hammingWeight(4294967293) == 31
